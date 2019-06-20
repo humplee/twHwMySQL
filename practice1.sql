@@ -12,25 +12,25 @@
 
 # ps:本练习中只需要将6的结果复制到`result.txt`文件中
 
-create database employee_db;
+#create database employee_db;
 
-use employee_db;
+#use employee_db;
 
-create table Employee(
-id int primary key,
-eName char(40),
-age int,
-gender char(10),
-companyId int,
-salary int 
-);
+#create table Employee(
+#id int primary key,
+#eName char(40),
+#age int,
+#gender char(10),
+#companyId int,
+#salary int 
+#);
+#LOAD DATA LOCAL INFILE 'C:/Users/kl/Desktop/MySQL-Quiz-2019-3-14-7-49-4-960-master/employee-data.csv' INTO TABLE Employee FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, eName, age, gender, companyId, salary);
+#create table Company(
+#    id int PRIMARY KEY,
+#    companyName char(100),
+#    employeesNumber int
+#);
 
-create table Company(
-    id int PRIMARY KEY,
-    companyName char(100),
-    employeesNumber int
-);
+#LOAD DATA LOCAL INFILE 'C:/Users/kl/Desktop/MySQL-Quiz-2019-3-14-7-49-4-960-master/company-data.csv' INTO TABLE Company FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (id, companyName, employeesNumber);
 
-LOAD DATA LOCAL INFILE '/var/sources/company-data.csv' INTO TABLE Company FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n' (id, companyName, employeesNumber);
-
-select * from Employee where eName like '%n%' and salary>6000;
+SELECT * FROM Employee WHERE eName LIKE '%n%' AND salary > 6000;
