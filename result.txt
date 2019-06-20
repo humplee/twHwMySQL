@@ -1,2 +1,9 @@
 1	'xiaohong'	19	'female'	1	7000
 					
+
+
+'baidu'	'xiaoming'
+'alibaba'	'xiaohong'
+'tengxun'	'xiaozhi'
+
+'tengxun'	8000.0000
