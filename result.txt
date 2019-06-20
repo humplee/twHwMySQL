@@ -1,0 +1,2 @@
+1	'xiaohong'	19	'female'	1	7000
+					
